@@ -7,7 +7,7 @@
            </div>
            <div class="userpass">
               
-                <input id="pasinp" type="text" placeholder="密码"  v-model="upass" >
+                <input id="pasinp"  placeholder="密码"  v-model="upass" v-bind:type="imgbool?'text':'password'">
              <span @click="imgbool=!imgbool" v-bind:class="imgbool?'cgreen':''" ></span>
              
            </div>
