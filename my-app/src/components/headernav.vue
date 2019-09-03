@@ -29,6 +29,8 @@ export default {
         padding: 0 .18rem;
         border-bottom: .01rem solid #f3f3f3;
         display: flex;
+        z-index: 999;
+        background: #ffffff;
     }
     .header-bar>.title{
         flex: 1;

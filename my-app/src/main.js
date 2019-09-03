@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css'
+ 
+import 'bootstrap/dist/js/bootstrap.min.js'
+require("./mock")
+
 Vue.prototype.axios=axios;
 Vue.config.productionTip = false
 

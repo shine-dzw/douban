@@ -1,7 +1,7 @@
 <template>
     <div>
         
-       <headers></headers>
+       <headernav></headernav>
         <div class="index-view">
             <subnav></subnav>
             <div v-for="(v,i) in arr" :key="i">
@@ -12,7 +12,7 @@
     </div>
 </template>
 <script>
-import headers from '../components/header'
+import headernav from '../components/headernav'
 import subnav from '../components/subnav'
 import shouyelist from '../components/shouyelist'
 export default {
@@ -22,7 +22,7 @@ export default {
             }
     },
     components:{
-        headers,
+        headernav,
         subnav,
         shouyelist,
     },

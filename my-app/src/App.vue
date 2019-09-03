@@ -12,14 +12,17 @@ export default {
 </script>
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
+body,p,ul,ol,li,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
+	margin:0;
+	padding: 0;
 }
 html{
   font-size:26.67vw;
 }
 a{
   text-decoration: none;
+}
+li,ol{
+  list-style: none;
 }
 </style>
