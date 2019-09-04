@@ -2,7 +2,8 @@
     <div class="movlist">
        <div class="head">
            <h2>{{movtitle}}</h2>
-           <a href="#">更多</a>
+           <!-- <a href="#">更多</a> -->
+           <slot name="slota"></slot>
        </div>
        <div class="content">
            <ul>
@@ -25,16 +26,16 @@ export default {
     props:{
         movtitle:{
             type:String,
-            required:true
+            // required:true
         },
         arr:{
             type:Array,
             required:true 
         }
     },
-    created() {
-        console.log(this.arr)
-    },
+    // created() {
+    //     console.log(this.arr)
+    // },
     methods: {
         fun(v){
             this.$router.push({
@@ -63,11 +64,11 @@ export default {
         color: #111;
         font-weight: 500;
     }
-    .movlist>.head>a{
+    /* .movlist>.head>a{
         font-size: .14rem;
         float:right;
         color:#42bd56;
-    }
+    } */
     .content>ul{
         display: flex;
         overflow:scroll;

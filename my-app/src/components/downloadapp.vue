@@ -18,9 +18,8 @@ export default {
 </script>
 <style scoped>
     .download-app{
-            padding: 0 0 2rem;
-            margin-top: 4.5rem;
-            margin-bottom: 3rem;
+            padding: 0 0 .2rem;
+            margin-top: .5rem;
             text-align: center;
             font-size: 1.5rem;
             text-align: center;

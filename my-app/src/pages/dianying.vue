@@ -2,9 +2,17 @@
     <div>
         <headernav></headernav>
         <div class="conlist">
-            <movview :arr="reying" :movtitle="titlea" ></movview>
-            <movview :arr="zaixian" :movtitle="titleb" ></movview>
-            <movview :arr="xinpian" :movtitle="titlec" ></movview>
+            <movview :arr="reying" :movtitle="titlea" >
+                <a class="slota" slot="slota">更多</a>
+            </movview>
+            <movview :arr="zaixian" :movtitle="titleb" >
+                <a class="slota" slot="slota">更多</a>
+
+            </movview>
+            <movview :arr="xinpian" :movtitle="titlec" >
+                <a class="slota" slot="slota">更多</a>
+
+            </movview>
             <faxianhaodianying :faxianhaodianying="faxianhaodianying" :movtitle="titled"></faxianhaodianying>
             <fenlei :fenlei="fenlei"></fenlei>
             <downloadapp></downloadapp>
@@ -73,4 +81,9 @@ export default {
    .conlist{
        margin-top: .48rem;
    }
+   .slota{
+         font-size: .14rem;
+        float:right;
+        color:#42bd56;
+    }
 </style>

@@ -16,7 +16,7 @@ export default {
     },
     props:{
         num:{
-            type:Number,
+            // type:Number,
             required:true,
         }
     },

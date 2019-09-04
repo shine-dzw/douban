@@ -5,11 +5,11 @@
        </h1>
        <ul class="nav">
            <li><router-link to="/dianying" style="color: rgb(35, 132, 232);">电影</router-link></li>
-           <li><router-link  to="" style="color: rgb(159, 120, 96);">图书</router-link></li>
-           <li><router-link  to="" style="color: rgb(228, 168, 19);">广播</router-link></li>
-           <li><router-link  to="" style="color: rgb(42, 184, 204);">小组</router-link></li>
+           <li><router-link  to="/book" style="color: rgb(159, 120, 96);">图书</router-link></li>
+           <li><router-link  to="/guangbo" style="color: rgb(228, 168, 19);">广播</router-link></li>
+           <li><router-link  to="/groups" style="color: rgb(42, 184, 204);">小组</router-link></li>
        </ul>
-       <span class="search"></span>
+       <span class="search" > <router-link to="/routers"></router-link></span>
     </div>
 </template>
 <script>
@@ -31,6 +31,7 @@ export default {
         display: flex;
         z-index: 999;
         background: #ffffff;
+        overflow: hidden;
     }
     .header-bar>.title{
         flex: 1;
@@ -66,5 +67,9 @@ export default {
         height: .18rem;
         margin-top: .18rem;
     }
-    
+    .search>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 </style>

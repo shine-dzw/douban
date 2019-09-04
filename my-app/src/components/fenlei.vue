@@ -33,6 +33,7 @@ export default {
     }
     .type-list{
         margin:.16rem 0 0 .16rem;
+        overflow: hidden;
     }
     .content>.type-list>li{
         float: left;

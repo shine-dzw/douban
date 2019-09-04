@@ -7,7 +7,10 @@
                 <h2>{{data.title}}</h2>
                 <div class="images"> 
                     <star :num="data.rating.average"></star><span>&nbsp;{{data.rating.average}}</span><span>&nbsp;&nbsp;{{data.collect_count}}&nbsp;人评价</span>
-                <p>{{data.year}}&nbsp;/&nbsp;<span v-for="(v,i) in data.genres" :key="i">{{v}}&nbsp;/&nbsp;</span></p>
+                <p>{{data.year}}&nbsp;/&nbsp;
+                    <span v-for="(v,i) in data.genres" :key="i">{{v}}&nbsp;/&nbsp;</span>
+                    <span v-for="(v,i) in data.casts" :key="i">{{v.name}}&nbsp;/&nbsp;</span>
+                </p>
                 <p class="thours">用APP查看影人资料</p>
                 </div>
                 <img :src="data.images.large">
@@ -71,6 +74,7 @@ export default {
     }
     .title>.images{
         float: left;
+        width: 2.3rem;
     }
     .title>.images>.thours{
         color: #42bd56;
