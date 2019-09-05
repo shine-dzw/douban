@@ -6,9 +6,9 @@
        </div>
        <div class="content">
             <ul class="onlystring">
-                <li v-for="(v,i) in faxianhaodianying" :key="i">
+                <li v-for="(v,i) in faxianhaodianying" :key="i" v-if="!v.line">
                     <a href="#" >{{v.title}}</a>
-                </li>
+                </li><br v-else>
             </ul>
        </div>
     </div>
@@ -25,7 +25,21 @@ export default {
             required:true,
         }
     },
-   
+    created() {
+        console.log(this.faxianhaodianying)
+    },
+   computed: {
+       newarr(){
+           this.faxianhaodianying.filter((v,i)=>{
+               if(v.line==true){
+                  
+                   return true
+               }else{
+                   return false
+               }
+           })
+       }
+   },
     
 }
 </script>
@@ -55,8 +69,8 @@ export default {
         margin-top: .01rem;
     }
     .content>.onlystring{
-        display: flex;
-         white-space: nowrap;
+        /* float: left; */
+        white-space: nowrap;
     }
    .onlystring>li{
         display: inline-block;
@@ -66,8 +80,9 @@ export default {
         height: .5rem;
         line-height: .5rem;
         padding: 0 .24rem;
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
         border-radius: .04rem;
+       
      }
     .onlystring>li>a{
         letter-spacing: .016rem;

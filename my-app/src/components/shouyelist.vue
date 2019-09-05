@@ -1,10 +1,12 @@
 <template>
     <div class=list>
-        <a href="#" class="thumbnail">
+        <a  class="thumbnail" @click="fun(arr)">
             <div class="content">
                  <img :src="imageurl" >
                 <h3>{{title}}</h3>
-                <p>{{content}}</p>
+                <!-- <p>{{content}}</p> -->
+                <p v-html="newcon">...</p>
+
                
 
             </div>
@@ -17,6 +19,9 @@
 <script>
 export default {
     props:{
+        arr:{
+            required:true,
+        },
         imageurl:{
             type:String,
             require:true,
@@ -31,11 +36,23 @@ export default {
         }
     },
     computed: {
-        contents(){
-                
+        //截取字符串
+        newcon(){
+            return this.content.substring(0,30)   
                 
         }
-        
+      
+    },
+    // created(){
+    //     console.log(this.arr)
+    // },
+    methods: {
+        fun(v){
+            this.$router.push({
+                path:"/indexxiangqing",
+                query:{val:v}
+                })
+        }
     },
    
 }

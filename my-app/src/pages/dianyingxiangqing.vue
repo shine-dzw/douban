@@ -33,24 +33,41 @@
                 <img  v-for="(v,i) in data.images" :key="i"   :src="v">
             </div>
          </div>
-    </div>
+         <div class="duanping">
+            <h6>查看更多相关分类</h6>
+            <guangbozujian :guangbo="guangbo"></guangbozujian>
+        </div>
+   </div>
 </template>
 <script>
 import headernav from '../components/headernav'
 import xiangqingbg from '../components/xiangqingbg'
 import star from '../components/star'
+import guangbozujian from '../components/guangbozujian'
 export default {
     data(){
         return{
             data:{
                 required:true
-            }
+            },
+             guangbo:[
+                {"username":"aaa","time":"2017-03-01 19:30:41","title":" 豆瓣App 4.12.0 主要更新 ",
+                "con":"可以写读书笔记了，同时支持编辑。随时随地，摘录怦然心动的段落，写下阅读时的随感。来写笔记吧，你...",
+                "num1":1,"num2":2,"num3":3},
+                 {"username":"aaa","time":"2017-03-01 19:30:41","title":" 豆瓣App 4.12.0 主要更新 ",
+                "con":"可以写读书笔记了，同时支持编辑。随时随地，摘录怦然心动的段落，写下阅读时的随感。来写笔记吧，你...",
+                "num1":1,"num2":2,"num3":3},
+                 {"username":"aaa","time":"2017-03-01 19:30:41","title":" 豆瓣App 4.12.0 主要更新 ",
+                "con":"可以写读书笔记了，同时支持编辑。随时随地，摘录怦然心动的段落，写下阅读时的随感。来写笔记吧，你...",
+                "num1":1,"num2":2,"num3":3},
+                ]
         }
     },
     components:{
         headernav,
         xiangqingbg,
-        star
+        star,
+        guangbozujian
     },
    created() {
        console.log(this.$route.query.val)
@@ -126,5 +143,13 @@ export default {
         width: 1.6rem;
         height: 1.3rem;
         margin-right:.03rem;
+    }
+    .duanping{
+        margin-top: .3rem;
+        padding:0 .18rem;
+    }
+    .duanping>h6{
+        color:#999999;
+        line-height: .5rem;
     }
 </style>

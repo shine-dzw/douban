@@ -25,4 +25,9 @@ a{
 li,ol{
   list-style: none;
 }
+/* 首页详情后台数据图片样式 */
+/* .content>.middle>img{
+   width: 100%;
+   height: auto;
+} */
 </style>

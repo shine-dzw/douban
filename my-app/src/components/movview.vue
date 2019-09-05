@@ -10,7 +10,8 @@
             <li v-for="(v,i) in arr" :key="i" @click="fun(v)">
                    <img :src="v.images.large">
                    <h5>{{v.title}}</h5>
-                   <span><star :num="v.rating.average"></star>{{v.rating.average}}</span>
+                   <!-- <span><star :num="v.rating.average"></star>{{v.rating.average}}</span> -->
+                   <span><star :num="v.rating.average"></star></span>
             </li>
                
            </ul>

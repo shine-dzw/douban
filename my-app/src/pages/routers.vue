@@ -16,10 +16,14 @@
             
         </ul>
         <div class="subnav">
-            <a href="/index" class="borrig">注册帐号</a>
-            <a href="/index" >登录豆瓣</a>
+            <!-- <a href="/zhuce" class="borrig">注册帐号</a>
+            <a href="/login" >登录豆瓣</a>
             <a href="/index" class="borrig">使用桌面版</a>
-            <a href="/index">使用豆瓣App</a>
+            <a href="/index">使用豆瓣App</a> -->
+           <router-link to="/zhuce" class="borrig">注册帐号</router-link>
+           <router-link to="/login" >登录豆瓣</router-link>
+           <router-link to="/index" class="borrig" >使用桌面版</router-link>
+           <router-link to="/index" >使用豆瓣App</router-link>
         </div>
     </div>
 </template>

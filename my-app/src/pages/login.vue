@@ -137,7 +137,7 @@ export default {
     .userpass>span{
         display: inline-block;
         position: absolute;
-        right: .01rem;
+        right: .2rem;
         /* right: -3rem; */
         width: .44rem;
         height: .44rem;

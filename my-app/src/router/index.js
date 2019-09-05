@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import LoGin from '../pages/login'
 import ZhuCe from '../pages/zhuce'
 import Index from '../pages/index'
+import Indexxq from '../pages/indexxiangqing'
 import DianYing from '../pages/dianying'
 import DianYingxq from '../pages/dianyingxiangqing'
 import Book from '../pages/book'
@@ -29,6 +30,11 @@ export default new Router({
       path: '/index',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/indexxiangqing',
+      name: 'Indexxq',
+      component: Indexxq
     },
     {
       path: '/dianying',

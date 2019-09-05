@@ -4,10 +4,12 @@
        <headernav></headernav>
         <div class="index-view">
             <subnav></subnav>
-            <div v-for="(v,i) in arr" :key="i">
-                
-                  <shouyelist :title="v.title" :imageurl="v.image" :content="v.content"></shouyelist>
-            </div>
+            <!-- <div v-for="(v,i) in arr" :key="i"> -->
+                <img src="../../static/img/loading_green.c0f9be0.gif" v-if="arr.length<=0" alt="">
+                <div v-else> 
+                  <shouyelist v-for="(v,i) in arr" :key="i" :arr="v" :title="v.title" :imageurl="v.image" :content="v.content"></shouyelist>
+                </div>
+            <!-- </div> -->
          </div>
     </div>
 </template>
@@ -27,7 +29,8 @@ export default {
         shouyelist,
     },
     created(){
-        this.axios({
+        setTimeout(()=>{
+            this.axios({
             method:"get",
             url:"/shouye",
         }).then((data)=>{
@@ -37,11 +40,17 @@ export default {
             // console.log(this.arr[2].content)
 
         })
+        },3000)
+        
     },
 }
 </script>
 <style scoped>
     .index-view{
         margin-top: .48rem; 
+    }
+    img{
+        display: inline-block;
+        margin:0 1.4rem;
     }
 </style>
