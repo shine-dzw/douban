@@ -27,7 +27,7 @@ li,ol{
 }
 /* 首页详情后台数据图片样式 */
 /* .content>.middle>img{
-   width: 100%;
+   width: 98%;
    height: auto;
 } */
 </style>

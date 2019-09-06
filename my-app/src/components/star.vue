@@ -4,12 +4,10 @@
           v-model="value"
           disabled
           show-score
-          text-color="#ff9900"
-          score-template="{value}">
+          score-template="{value}"
+          text-color="#ff9900" >
         </el-rate>
-
-
-    </div>
+     </div>
 </template> 
 <script>
   export default {
@@ -30,6 +28,6 @@
  </script>
 <style >
     .el-rate__icon {
-    margin-right: -4px;
+    margin-right: -3.5px;
      }
 </style>

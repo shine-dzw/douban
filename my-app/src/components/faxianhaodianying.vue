@@ -5,7 +5,7 @@
            <a href="#">更多</a>
        </div>
        <div class="content">
-            <ul class="onlystring">
+            <ul class="onlystring" >
                 <li v-for="(v,i) in faxianhaodianying" :key="i" v-if="!v.line">
                     <a href="#" >{{v.title}}</a>
                 </li><br v-else>
@@ -28,18 +28,18 @@ export default {
     created() {
         console.log(this.faxianhaodianying)
     },
-   computed: {
-       newarr(){
-           this.faxianhaodianying.filter((v,i)=>{
-               if(v.line==true){
+//    computed: {
+//        newarr(){
+//            this.faxianhaodianying.filter((v,i)=>{
+//                if(v.line==true){
                   
-                   return true
-               }else{
-                   return false
-               }
-           })
-       }
-   },
+//                    return true
+//                }else{
+//                    return false
+//                }
+//            })
+//        }
+//    },
     
 }
 </script>

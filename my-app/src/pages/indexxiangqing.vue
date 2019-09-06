@@ -142,6 +142,7 @@ export default {
         color: #072;
     }
     .describe>.content{
+         overflow: hidden;
          word-break: break-all;
      }
     

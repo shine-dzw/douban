@@ -6,9 +6,9 @@ import router from './router'
 import axios from 'axios'
 import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
- 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import {store} from './store/store'
 import 'bootstrap/dist/js/bootstrap.min.js'
 require("./mock")
 Vue.use(ElementUI);
@@ -21,5 +21,6 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
-  render: h => h(App)
+  render: h => h(App),
+  store
 })
