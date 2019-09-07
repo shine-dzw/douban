@@ -7,7 +7,7 @@
            </div>
            <div class="userpass">
              <input  placeholder="Token" v-model="upass" :type="imgbool?'text':'password'">
-             <span @click="imgbool=!imgbool" :class="imgbool?'cgreen':''"></span>
+             <span  class="hui" @click="imgbool=!imgbool" :class="imgbool?'cgreen':'hui'"></span>
            </div>
            <div>
                <button type="submit"  class="submit" v-if="bool" @click="fun()">登录</button>
@@ -137,11 +137,10 @@ export default {
     .userpass>input{
         position: absolute;
     }
-    .userpass>span{
+        .userpass>.hui{
         display: inline-block;
         position: absolute;
         right: .2rem;
-        /* right: -3rem; */
         width: .44rem;
         height: .44rem;
         line-height:.44rem;
@@ -152,7 +151,7 @@ export default {
           .userpass>.cgreen{
         display: inline-block;
         position: absolute;
-        right: .01rem;
+        right: .2rem;
         width: .44rem;
         height: .44rem;
         line-height:.44rem; 

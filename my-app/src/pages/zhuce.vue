@@ -8,7 +8,7 @@
            <div class="userpass">
               
                 <input id="pasinp"  placeholder="密码"  v-model="upass" v-bind:type="imgbool?'text':'password'">
-             <span @click="imgbool=!imgbool" v-bind:class="imgbool?'cgreen':''" ></span>
+             <span class="hui" @click="imgbool=!imgbool" v-bind:class="imgbool?'cgreen':'hui'" ></span>
              
            </div>
            <div class="formname">
@@ -141,11 +141,10 @@ export default {
     .userpass>input{
         position: absolute;
     }
-    .userpass>span{
+    .userpass>.hui{
         display: inline-block;
         position: absolute;
         right: .2rem;
-        /* right: -3rem; */
         width: .44rem;
         height: .44rem;
         line-height:.44rem;
@@ -156,7 +155,7 @@ export default {
     .userpass>.cgreen{
         display: inline-block;
         position: absolute;
-        right: .01rem;
+        right: .2rem;
         width: .44rem;
         height: .44rem;
         line-height:.44rem; 

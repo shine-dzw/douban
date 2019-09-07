@@ -3,11 +3,9 @@
          <el-rate
           v-model="value"
           disabled
-          show-score
-          score-template="{value}"
-          text-color="#ff9900" 
+          text-color="#aaaaaa" 
           show-text
-          texts>
+          :texts="texts">
         </el-rate>
      </div>
 </template> 

@@ -4,10 +4,10 @@
      
            <div class="sub-nav">
                <ul>
-                   <li> <router-link to="">影院热映</router-link> </li>
-                   <li> <router-link to="">欧美新碟榜</router-link> </li>
-                   <li> <router-link to="">注册帐号</router-link> </li>
-                   <li> <router-link to="">登录豆瓣</router-link> </li>
+                   <li> <router-link to="/dianying">影院热映</router-link> </li>
+                   <li> <router-link to="/dianying">欧美新碟榜</router-link> </li>
+                   <li> <router-link to="/zhuce">注册帐号</router-link> </li>
+                   <li> <router-link to="/login">登录豆瓣</router-link> </li>
                </ul>
            </div>
       
