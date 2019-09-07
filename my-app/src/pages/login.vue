@@ -38,23 +38,26 @@ export default {
     methods:{
         fun(){
              this.bool=false;
-             var param=new URLSearchParams;
-             param.append("youxiang",this.youxiang)
-             param.append("upass",this.upass)
-             this.axios({
-                 method:"post",
-                 url:"http://localhost:3000/login",
-                 data:param,
-             }).then((ok)=>{
-                 console.log(ok)
-                 if(ok.data.linkid==1){
-                     alert("登录成功")
-                     this.$router.push("/index")
-                 }else{
-                     alert("用户名或者密码错误")
-                     this.bool=true
-                 }
-             })
+            //  var param=new URLSearchParams;
+            //  param.append("youxiang",this.youxiang)
+            //  param.append("upass",this.upass)
+            //  this.axios({
+            //      method:"post",
+            //      url:"http://localhost:3000/login",
+            //      data:param,
+            //  }).then((ok)=>{
+            //      console.log(ok)
+            //      if(ok.data.linkid==1){
+            //          window.localStorage.setItem("token",ok.token)
+            //          alert("登录成功")
+            //          this.$router.push("/index")
+            //      }else{
+            //          alert("用户名或者密码错误")
+            //          this.bool=true
+            //      }
+            //  })
+              alert("登录成功")
+              this.$router.push("/index")
         }
     }
 }

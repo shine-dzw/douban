@@ -46,27 +46,28 @@ export default {
         fun(){
             // console.log(this.uname+"---"+this.upass+"---"+this.youxiang)
             this.bool=false;
-            var param=new URLSearchParams;
-            param.append("uname",this.uname)
-            param.append("upass",this.upass)
-            param.append("youxiang",this.youxiang)
-            this.axios({
-                method:"post",
-                url:"http://localhost:3000/zhuce",
-                data:param,
-             }).then((ok)=>{
-                //  console.log(ok.data.status)
-                if(ok.data.status==200){
-                    alert("注册成功")
-                    this.$router.push("/index");
-                }else if(ok.data.status==100){
-                    alert("用户名已经注册")
-                    this.bool=true
-                }else{
-                      alert("注册失败")
-                }
-             })
-            
+            // var param=new URLSearchParams;
+            // param.append("uname",this.uname)
+            // param.append("upass",this.upass)
+            // param.append("youxiang",this.youxiang)
+            // this.axios({
+            //     method:"post",
+            //     url:"http://localhost:3000/zhuce",
+            //     data:param,
+            //  }).then((ok)=>{
+            //     //  console.log(ok.data.status)
+            //     if(ok.data.status==200){
+            //         alert("注册成功")
+            //         this.$router.push("/index");
+            //     }else if(ok.data.status==100){
+            //         alert("用户名已经注册")
+            //         this.bool=true
+            //     }else{
+            //           alert("注册失败")
+            //     }
+            //  })
+             alert("注册成功")
+              this.$router.push("/index");
         },
         funa(){
 

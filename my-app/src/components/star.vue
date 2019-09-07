@@ -5,7 +5,9 @@
           disabled
           show-score
           score-template="{value}"
-          text-color="#ff9900" >
+          text-color="#ff9900" 
+          show-text
+          texts>
         </el-rate>
      </div>
 </template> 
@@ -13,7 +15,14 @@
   export default {
     data() {
       return {
-        values:0,
+        // values:0,
+        texts:[
+          this.num,
+          this.num,
+          this.num,
+          this.num,
+          this.num,
+        ]
       }
     },
     props:{

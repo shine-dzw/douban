@@ -20,7 +20,8 @@ import shouyelist from '../components/shouyelist'
 export default {
     data(){
         return{
-            arr:[]
+            arr:[],
+            localtoken:'',
             }
     },
     components:{
@@ -41,8 +42,7 @@ export default {
 
         })
         },3000)
-        
-    },
+     },
 }
 </script>
 <style scoped>

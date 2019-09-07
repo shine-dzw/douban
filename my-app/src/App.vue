@@ -17,7 +17,8 @@ body,p,ul,ol,li,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
 	padding: 0;
 }
 html{
-  font-size:26.67vw;
+  font-size:26.67vw!important;
+  /* font-size: 26.67vw; */
 }
 a{
   text-decoration: none;
